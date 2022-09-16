@@ -1,0 +1,68 @@
+body{
+    background-color: beige;
+}
+.budget-tracker{
+    border-collapse: collapse;
+    min-width: 750px;
+}
+.budget-tracker *{
+    font-family: 'Fredoka One', cursive;
+}
+.budget-tracker th{
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 2px solid #009578;
+}
+.budget-tracker td{
+    padding: 5px;
+}
+.input,
+.delete-entry{
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.input{
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+}
+.input:focus{
+    border-color: #bbbbbb;
+}
+.delete-entry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background: none;
+    color: red;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+.delete-entry:hover{
+    background: rgba(255, 0, 0, 0.1);
+}
+button{
+    cursor: pointer;
+    border: none;
+    padding: 7px;
+    color: black;
+    background-color: #009578;
+    transition: all .3s linear;
+    border-radius: 20px;
+}
+.controls,
+.summary{
+    text-align: right;
+}
+button:hover{
+    color: #009578;
+    border: 2px solid #00ffcc;
+    border-radius: 0px;
+    background-color: transparent;
+}
